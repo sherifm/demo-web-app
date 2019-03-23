@@ -1,0 +1,22 @@
+{
+  "name": "demo-web-app",
+  "version": "1.0.0",
+  "description": "Web app for demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherifm/demo-web-app.git"
+  },
+  "author": "Sherif Mostafa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sherifm/demo-web-app/issues"
+  },
+  "homepage": "https://github.com/sherifm/demo-web-app#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
