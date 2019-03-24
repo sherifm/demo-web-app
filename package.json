@@ -2,7 +2,7 @@
   "name": "demo-web-app",
   "version": "1.0.0",
   "description": "Web app for demos",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "restart": "pm2 startOrRestart ecosystem.config.js",
     "deploy": "pm2 deploy ecosystem.config.js production",
@@ -19,7 +19,18 @@
   },
   "homepage": "https://github.com/sherifm/demo-web-app#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "ejs-lint": "^0.3.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.9",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1"
   },
   "devDependencies": {
     "pm2": "^3.4.0"
