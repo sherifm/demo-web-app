@@ -1,0 +1,19 @@
+version: "2"
+services:
+  demo-web-app:
+    container_name: demo-web-app
+    image: sherifm2010/demo-web-app
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo_instance
+    image: mongo
+    volumes:
+      - /demo-web-app-data:/data/db
+    ports:
+      # Forward mongo-port for non-dockerized services
+      - "27017:27017"
